@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfProfile>
+  <Profile>
+    <ProfileName>GOM - Optical Measuring Techniques</ProfileName>
+    <Executeables>
+      <string>gom_inspect.exe</string>
+      <string>aramis.exe</string>
+      <string>gom_scan.exe</string>
+      <string>atosviewer.exe</string>
+      <string>atos.exe</string>
+      <string>start_app_free.exe</string>
+      <string>start_app_free.exe</string>
+      <string>gom_correlate.exe</string>
+      <string>pontos.exe</string>
+      <string>argus.exe</string>
+      <string>tritop.exe</string>
+      <string>pontosviewer.exe</string>
+    </Executeables>
+    <Settings />
+  </Profile>
+</ArrayOfProfile>

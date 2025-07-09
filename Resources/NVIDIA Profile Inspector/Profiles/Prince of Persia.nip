@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfProfile>
+  <Profile>
+    <ProfileName>Prince of Persia</ProfileName>
+    <Executeables>
+      <string>prince of persia.exe</string>
+      <string>-007.exe</string>
+      <string>pop.exe</string>
+      <string>pop3.exe</string>
+      <string>princeofpersia_launcher.exe</string>
+      <string>pop2.exe</string>
+      <string>princeofpersia.exe</string>
+    </Executeables>
+    <Settings>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1894626177</SettingID>
+        <SettingValue>39</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+    </Settings>
+  </Profile>
+</ArrayOfProfile>
