@@ -1,17 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-16"?>
 <ArrayOfProfile>
   <Profile>
-    <ProfileName>Farming Simulator 22</ProfileName>
+    <ProfileName>RVGL</ProfileName>
     <Executeables>
-      <string>farmingsimulator2022game.exe</string>
+      <string>rvgl.exe</string>
     </Executeables>
     <Settings>
-      <ProfileSetting>
-        <SettingNameInfo>Vertical Sync</SettingNameInfo>
-        <SettingID>11041231</SettingID>
-        <SettingValue>1199655232</SettingValue>
-        <ValueType>Dword</ValueType>
-      </ProfileSetting>
       <ProfileSetting>
         <SettingNameInfo />
         <SettingID>1881060439</SettingID>
@@ -20,8 +14,20 @@
       </ProfileSetting>
       <ProfileSetting>
         <SettingNameInfo />
-        <SettingID>1887390533</SettingID>
+        <SettingID>1888336069</SettingID>
+        <SettingValue>1133150514</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1888336070</SettingID>
         <SettingValue>0</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1890387400</SettingID>
+        <SettingValue>1753158341</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
     </Settings>
