@@ -20,8 +20,14 @@
       </ProfileSetting>
       <ProfileSetting>
         <SettingNameInfo />
+        <SettingID>1887390533</SettingID>
+        <SettingValue>0</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
         <SettingID>1888336069</SettingID>
-        <SettingValue>1081478904</SettingValue>
+        <SettingValue>1082643845</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
@@ -39,7 +45,7 @@
       <ProfileSetting>
         <SettingNameInfo />
         <SettingID>1890387400</SettingID>
-        <SettingValue>1753611594</SettingValue>
+        <SettingValue>1753612932</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
     </Settings>
