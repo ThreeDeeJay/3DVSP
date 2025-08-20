@@ -17,6 +17,18 @@ IF NOT !ERRORLEVEL! == 0 (
     )
 
 PushD "%~dp0"
+
+
+::Driver
+IF EXIST "%~dp0Resources\3D Vision\Driver\*.exe" (
+    Echo Driver:
+    CD "%~dp0Resources/3D Vision/Driver"
+    FOR %%E IN (*.exe) Do (
+        Echo     [92m %%~nxE [0m
+        )
+    CD "%~dp0"
+    )
+
 Echo Settings:
 CD "%~dp0Resources/3D Vision/Settings"
 FOR %%R IN (*.reg) Do (
@@ -37,6 +49,18 @@ Echo.
 
 
 PushD "%~dp0"
+
+::Driver
+IF EXIST "%~dp0Resources\3D Vision\Driver\*.exe" (
+    Echo Installing driver...
+    CD "%~dp0Resources/3D Vision/Driver"
+    FOR %%E IN (*.exe) Do (
+        Echo     [92m %%~nxE [0m
+        "%%~nxE" -s -clean
+        )
+    CD "%~dp0"
+    )
+
 ::Settings
 Echo Applying settings...
 CD "%~dp0Resources/3D Vision/Settings"
@@ -58,10 +82,9 @@ CD "%~dp0"
 
 ::Finish
 Echo [92mSetup complete.[0m
-Echo Notes:
-Echo     - 
-REM PAUSE>NUL
-
+Echo Once the driver has been installed, press any key to enable 3D Vision.
+PAUSE>NUL
+"%ProgramFiles(x86)%\NVIDIA Corporation\3D Vision\nvstlink.exe" /enable
 EXIT/B
 
 :Execute
