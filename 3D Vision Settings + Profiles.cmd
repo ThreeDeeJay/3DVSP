@@ -57,6 +57,15 @@ IF EXIST "%~dp0Resources\3D Vision\Driver\*.exe" (
     FOR %%E IN (*.exe) Do (
         Echo     [92m %%~nxE [0m
         "%%~nxE" -s -clean
+        ECHO ERRORLEVEL: "%ERRORLEVEL%" "!ERRORLEVEL!"
+        If Not "!ERRORLEVEL!"=="0" (
+            Echo Installer has returned an error code: "!ERRORLEVEL!"
+            If "!ERRORLEVEL!"=="-467664896" (
+                Echo This error was caused by a pending setup, so try manually uninstalling the driver then restart your PC, then run this script again.
+                )
+            Echo You can close this window to abort the installation or press any key to continue at your own risk.
+            Pause >Nul
+        )
         )
     CD "%~dp0"
     )
