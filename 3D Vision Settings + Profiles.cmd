@@ -3,7 +3,7 @@ SETlocal EnableExtensions
 SETlocal EnableDelayedExpansion
 
 SET "ScriptTitle=3D Vision Settings + Profiles"
-SET "ScriptVersion=1.2"
+SET "ScriptVersion=1.3"
 SET "ScriptTitleVersion=!ScriptTitle! !ScriptVersion!"
 
 Echo [90m::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::[0m
