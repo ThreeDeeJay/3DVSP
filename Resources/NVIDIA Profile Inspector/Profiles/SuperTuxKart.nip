@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-16"?>
 <ArrayOfProfile>
   <Profile>
-    <ProfileName>Kodi</ProfileName>
+    <ProfileName>SuperTuxKart</ProfileName>
     <Executeables>
-      <string>kodi.exe</string>
+      <string>supertuxkart.exe</string>
     </Executeables>
     <Settings>
       <ProfileSetting>
@@ -15,7 +15,7 @@
       <ProfileSetting>
         <SettingNameInfo />
         <SettingID>1888336069</SettingID>
-        <SettingValue>1149717972</SettingValue>
+        <SettingValue>1068946933</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
@@ -27,7 +27,7 @@
       <ProfileSetting>
         <SettingNameInfo />
         <SettingID>1890387400</SettingID>
-        <SettingValue>1761896862</SettingValue>
+        <SettingValue>1761868836</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
     </Settings>
