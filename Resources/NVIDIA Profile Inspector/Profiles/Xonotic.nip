@@ -1,14 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-16"?>
 <ArrayOfProfile>
   <Profile>
-    <ProfileName>Xenia</ProfileName>
+    <ProfileName>Xonotic</ProfileName>
     <Executeables>
-      <string>xenia_edge.exe</string>
-      <string>xenia.exe</string>
-      <string>xenia_canary.exe</string>
-      <string>xenia_canary_mousehook_netplay.exe</string>
+      <string>xonotic-x86.exe</string>
+      <string>xonotic.exe</string>
     </Executeables>
     <Settings>
+      <ProfileSetting>
+        <SettingNameInfo>Stereo - Swap eyes</SettingNameInfo>
+        <SettingID>296633180</SettingID>
+        <SettingValue>1</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
       <ProfileSetting>
         <SettingNameInfo />
         <SettingID>1881060439</SettingID>
