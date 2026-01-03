@@ -1,17 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-16"?>
 <ArrayOfProfile>
   <Profile>
-    <ProfileName>Mozilla FireFox - Plugin Container</ProfileName>
+    <ProfileName>FreeTube</ProfileName>
     <Executeables>
-      <string>plugin-container.exe</string>
+      <string>freetube.exe</string>
     </Executeables>
     <Settings>
-      <ProfileSetting>
-        <SettingNameInfo />
-        <SettingID>1881060439</SettingID>
-        <SettingValue>0</SettingValue>
-        <ValueType>Dword</ValueType>
-      </ProfileSetting>
       <ProfileSetting>
         <SettingNameInfo />
         <SettingID>1889182065</SettingID>
