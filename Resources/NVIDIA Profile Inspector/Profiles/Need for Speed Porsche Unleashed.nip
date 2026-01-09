@@ -1,21 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-16"?>
 <ArrayOfProfile>
   <Profile>
-    <ProfileName>Mozilla FireFox - Plugin Container</ProfileName>
+    <ProfileName>Need for Speed: Porsche Unleashed</ProfileName>
     <Executeables>
-      <string>plugin-container.exe</string>
+      <string>nfs5.exe</string>
+      <string>porsche.exe</string>
     </Executeables>
     <Settings>
       <ProfileSetting>
         <SettingNameInfo />
-        <SettingID>1881060439</SettingID>
+        <SettingID>1887390533</SettingID>
         <SettingValue>0</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
         <SettingNameInfo />
-        <SettingID>1889182065</SettingID>
-        <SettingValue>1</SettingValue>
+        <SettingID>1894626177</SettingID>
+        <SettingValue>35</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
     </Settings>
