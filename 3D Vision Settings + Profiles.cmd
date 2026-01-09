@@ -3,7 +3,7 @@ SETlocal EnableExtensions
 SETlocal EnableDelayedExpansion
 
 SET "ScriptTitle=3D Vision Settings + Profiles"
-SET "ScriptVersion=1.3"
+SET "ScriptVersion=1.4"
 SET "ScriptTitleVersion=!ScriptTitle! !ScriptVersion!"
 
 Echo [90m::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::[0m
@@ -29,18 +29,33 @@ IF EXIST "%~dp0Resources\3D Vision\Driver\*.exe" (
     CD "%~dp0"
     )
 
+::Settings
 Echo Settings:
 CD "%~dp0Resources/3D Vision/Settings"
 FOR %%R IN (*.reg) Do (
     Echo     [94m %%~nR [0m
     )
 CD "%~dp0"
+
+::Profiles
 Echo Profiles:
 CD "%~dp0Resources/NVIDIA Profile Inspector/Profiles"
 FOR %%P IN (*.nip) Do (
     Echo     [92m %%~nP [0m
     )
 CD "%~dp0"
+
+::ShadowPlay
+Echo ShadowPlay:
+IF EXIST "%~dp0Resources\ShadowPlay\Login bypass\app.js" (
+    Echo     [92m Login bypass [0m
+    )
+CD "%~dp0Resources/ShadowPlay/Settings"
+FOR %%R IN (*.reg) Do (
+    Echo     [94m %%~nR [0m
+    )
+CD "%~dp0"
+
 
 PAUSE 
 :Begin
@@ -57,18 +72,10 @@ IF EXIST "%~dp0Resources\3D Vision\Driver\*.exe" (
     FOR %%E IN (*.exe) Do (
         Echo     [92m %%~nxE [0m
         "%%~nxE" -s -clean
-        ECHO ERRORLEVEL: "%ERRORLEVEL%" "!ERRORLEVEL!"
-        If Not "!ERRORLEVEL!"=="0" (
-            Echo Installer has returned an error code: "!ERRORLEVEL!"
-            If "!ERRORLEVEL!"=="-467664896" (
-                Echo This error was caused by a pending setup, so try manually uninstalling the driver then restart your PC, then run this script again.
-                )
-            Echo You can close this window to abort the installation or press any key to continue at your own risk.
-            Pause >Nul
+        Call :ErrorCheck
         )
-        )
-    CD "%~dp0"
     )
+CD "%~dp0"
 
 ::Settings
 Echo Applying settings...
@@ -88,6 +95,18 @@ FOR %%P IN (*.nip) Do (
     )
 CD "%~dp0"
 
+::ShadowPlay
+Echo Configuring ShadowPlay...
+IF EXIST "%~dp0Resources\ShadowPlay\Login bypass\app.js" (
+    Echo     [92m Login bypass [0m
+    copy "%~dp0Resources\ShadowPlay\Login bypass\app.js" "C:\Program Files\NVIDIA Corporation\NVIDIA GeForce Experience\www\app.js" 1>NUL 2>&1
+    )
+CD "%~dp0Resources/ShadowPlay/Settings"
+FOR %%R IN (*.reg) Do (
+    Echo     [94m %%~nR [0m
+    reg import "%%R" 1>NUL 2>&1
+    )
+CD "%~dp0"
 
 ::Finish
 Echo [92mSetup complete.[0m
@@ -120,9 +139,18 @@ del "!elevate!" 1>NUL 2>&1
 cd /d "!CD!"
 
 :ErrorCheck
-IF !ERRORLEVEL! == 0 (
-    Echo [92m[Done][0m
-    ) else (
-    Echo: [91m[Failed][0m Error: !ERRORLEVEL!
+IF NOT !ERRORLEVEL! == 0 (
+    Echo Installer has returned an error code: "!ERRORLEVEL!"
+    IF "!ERRORLEVEL!"=="-522190748" (
+        Echo Low disk space. Please try to free up some disk space then try again.
+        ) else (
+        If "!ERRORLEVEL!"=="-467664896" (
+            Echo This error was caused by a pending setup, so try manually uninstalling the driver then restart your PC, then run this script again.
+        ) else (
+            Echo: [91m[Failed][0m Error: !ERRORLEVEL!
+            )
+        )
+    Echo You can close this window to abort the installation or press any key to continue at your own risk.
     )
+REM "-469762040" Unknown
 Exit /B
