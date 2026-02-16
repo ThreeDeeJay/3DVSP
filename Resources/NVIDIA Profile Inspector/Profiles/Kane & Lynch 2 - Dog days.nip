@@ -1,21 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-16"?>
 <ArrayOfProfile>
   <Profile>
-    <ProfileName>Kodi</ProfileName>
+    <ProfileName>Kane &amp; Lynch 2: Dog days</ProfileName>
     <Executeables>
-      <string>kodi.exe</string>
+      <string>kl2.exe</string>
     </Executeables>
     <Settings>
       <ProfileSetting>
         <SettingNameInfo />
-        <SettingID>1881060439</SettingID>
-        <SettingValue>1</SettingValue>
+        <SettingID>1884348433</SettingID>
+        <SettingValue>1086324736</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1887390533</SettingID>
+        <SettingValue>0</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
         <SettingNameInfo />
         <SettingID>1888336069</SettingID>
-        <SettingValue>1149717972</SettingValue>
+        <SettingValue>1120521228</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
@@ -26,14 +32,14 @@
       </ProfileSetting>
       <ProfileSetting>
         <SettingNameInfo />
-        <SettingID>1889352402</SettingID>
-        <SettingValue>1</SettingValue>
+        <SettingID>1889148383</SettingID>
+        <SettingValue>2</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
         <SettingNameInfo />
         <SettingID>1890387400</SettingID>
-        <SettingValue>1761896862</SettingValue>
+        <SettingValue>1770798419</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
     </Settings>

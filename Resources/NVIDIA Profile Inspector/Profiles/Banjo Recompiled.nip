@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-16"?>
 <ArrayOfProfile>
   <Profile>
-    <ProfileName>Kodi</ProfileName>
+    <ProfileName>Banjo: Recompiled</ProfileName>
     <Executeables>
-      <string>kodi.exe</string>
+      <string>banjorecompiled.exe</string>
     </Executeables>
     <Settings>
       <ProfileSetting>
@@ -15,7 +15,7 @@
       <ProfileSetting>
         <SettingNameInfo />
         <SettingID>1888336069</SettingID>
-        <SettingValue>1149717972</SettingValue>
+        <SettingValue>1132972523</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
@@ -26,14 +26,8 @@
       </ProfileSetting>
       <ProfileSetting>
         <SettingNameInfo />
-        <SettingID>1889352402</SettingID>
-        <SettingValue>1</SettingValue>
-        <ValueType>Dword</ValueType>
-      </ProfileSetting>
-      <ProfileSetting>
-        <SettingNameInfo />
         <SettingID>1890387400</SettingID>
-        <SettingValue>1761896862</SettingValue>
+        <SettingValue>1769512667</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
     </Settings>
