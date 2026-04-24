@@ -1,16 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-16"?>
 <ArrayOfProfile>
   <Profile>
-    <ProfileName>Unreal Tournament 2004</ProfileName>
+    <ProfileName>Mario Kart: Arcade GP DX</ProfileName>
     <Executeables>
-      <string>ut2004-win64.exe</string>
-      <string>ut2004.exe</string>
+      <string>mk_agp3_final.exe</string>
     </Executeables>
     <Settings>
       <ProfileSetting>
-        <SettingNameInfo>Vertical Sync</SettingNameInfo>
-        <SettingID>11041231</SettingID>
-        <SettingValue>411601032</SettingValue>
+        <SettingNameInfo />
+        <SettingID>1881060439</SettingID>
+        <SettingValue>1</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
@@ -22,7 +21,7 @@
       <ProfileSetting>
         <SettingNameInfo />
         <SettingID>1888336069</SettingID>
-        <SettingValue>1110651749</SettingValue>
+        <SettingValue>1101156616</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
@@ -34,7 +33,7 @@
       <ProfileSetting>
         <SettingNameInfo />
         <SettingID>1890387400</SettingID>
-        <SettingValue>1771171529</SettingValue>
+        <SettingValue>1771445269</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
     </Settings>
